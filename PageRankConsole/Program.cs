@@ -5,9 +5,10 @@ class Program
 {
   class Graph
   {
+      public int maxIndex = 64;
       public int[,] graphMatrix = new int[100, 100];
       public float[] PageRanks = new float[100];
-      public int maxIndex = 100;
+    
 
       public Graph(int num)
       {
@@ -203,7 +204,7 @@ class Program
       }
       else
       {    
-          Console.WriteLine("Enter positive integer (<100) for number of pages:");
+          Console.WriteLine("Enter positive integer (<=63) for number of pages:");
           string size = Console.ReadLine();
           PageLink g = new PageLink(Convert.ToInt32(size));
           g.PagesSetUp();
