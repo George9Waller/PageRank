@@ -1,2 +1,3 @@
 language = "csharp"
-run = "csharp PageRankConsole/Program.cs"
+-run = "csc /out:PageRankConsole/Program.exe PageRankConsole/Program.cs"
+run = "mono PageRankConsole/Program.exe"
