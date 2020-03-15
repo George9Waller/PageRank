@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-
 namespace PageRankConsole
 {
     class Program
@@ -17,7 +16,6 @@ namespace PageRankConsole
 
                 maxIndex = num;
             }
-
             public void Show()
             {
                 Console.Clear();
@@ -32,7 +30,6 @@ namespace PageRankConsole
                 }
             }
         }
-
         class PageLink : Graph
         {
             public PageLink(int num) : base(num)
